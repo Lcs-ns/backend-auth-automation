@@ -1,4 +1,4 @@
-# Auth API - Hexagonal Architecture
+# Auth API
 
 This project is a simple authentication API built with FastAPI, following the Hexagonal Architecture (Ports and Adapters) and using PostgreSQL as the database.
 
@@ -54,7 +54,10 @@ Sensitive data is stored in the `.env` file:
 
 - `DATABASE_URL`: PostgreSQL connection string
 - `JWT_SECRET`: Secret key for JWT token signing
-- `JWT_EXPIRES_HOURS`: Token expiration in hours
+
+## Automated API Testing
+
+This project will also be used for automated API testing with Playwright in the future. Test scripts and instructions will be added to this repository to ensure robust authentication flows and endpoint validation.
 
 ## How to Run
 
