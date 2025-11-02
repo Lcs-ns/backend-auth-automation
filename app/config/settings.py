@@ -1,0 +1,12 @@
+from pydantic_settings import BaseSettings
+
+class Settings(BaseSettings):
+    DATABASE_URL: str
+    JWT_SECRET: str = "super_secret_key"
+    JWT_EXPIRES_HOURS: int = 1
+
+    class Config:
+        env_file = ".env"
+        env_file_encoding = "utf-8"
+
+settings = Settings()
